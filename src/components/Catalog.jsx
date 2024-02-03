@@ -9,7 +9,7 @@ const RANTING_COST = 3;
 
 export const Catalog = ({ moviesData }) => {
   const [budget, setBudget] = useState(100);
-  const [movies, setMovies] = useState(moviesData);
+  const [movies] = useState(moviesData);
   const [viewMovies, setViewMovies] = useState(moviesData);
   const [rentedMovies, setRentedMovies] = useState([]);
 

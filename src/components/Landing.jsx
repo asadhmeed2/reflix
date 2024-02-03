@@ -1,6 +1,5 @@
 import React from "react";
 import { Users } from "./Users";
-import { Layout } from "./Layout";
 
 const USERS = [
   { id: "1", name: "John" },

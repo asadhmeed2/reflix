@@ -7,7 +7,7 @@ export const Users = ({ users }) => {
     <>
       <div className="users">
         {users.map((user) => (
-          <Link key={user.id} to={`/home`}>
+          <Link className="user-link" key={user.id} to={`/catalog`}>
             <User user={user} />
           </Link>
         ))}

@@ -61,3 +61,76 @@ body{
   font-size:20px;
   color: white;
 }
+
+.user-link{
+  text-decoration: none;
+}
+
+.movie-card{
+  height: 200px;
+  width: 150px;
+  position: relative;
+}
+
+.movie-card-btn{
+  background-color: transparent;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: white;
+  border-radius: 50%;
+  border: 1px solid white
+  
+}
+
+.movie-card-btn:hover{
+  cursor: pointer;
+  transform: scale(1.5);
+}
+
+.movie-card-image{
+  width: 100%;
+  height: 100%;
+}
+
+.catalog{
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+}
+
+.ranted-movies-list{
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+}
+
+.movie-detail{
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items:center;
+  width: 100%;
+  height: 100vh;
+  gap: 20px;
+  color: white;
+}
+
+.movie-detail-image{
+  width: 200px;
+  height: 300px;
+}
+
+.movie-detail-desc{
+  text-align: center;
+  font-size:20px;
+}
+
+.first-section{
+  display: flex;
+  justify-content:space-between;
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+}
+

@@ -10,11 +10,9 @@ const USERS = [
 
 export const Landing = () => {
   return (
-    <Layout>
-      <div className="landing">
-        <div className="landing-message">WHO'S WATCHING?</div>
-        <Users users={USERS} />
-      </div>
-    </Layout>
+    <div className="landing">
+      <div className="landing-message">WHO'S WATCHING?</div>
+      <Users users={USERS} />
+    </div>
   );
 };

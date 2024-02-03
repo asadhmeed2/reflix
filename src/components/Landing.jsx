@@ -1,4 +1,6 @@
 import React from "react";
+import { Users } from "./Users";
+import { Layout } from "./Layout";
 
 const USERS = [
   { id: "1", name: "John" },
@@ -8,10 +10,11 @@ const USERS = [
 
 export const Landing = () => {
   return (
-    <>
-      {USERS.map((user) => (
-        <div>{user.name}</div>
-      ))}
-    </>
+    <Layout>
+      <div className="landing">
+        <div className="landing-message">WHO'S WATCHING?</div>
+        <Users users={USERS} />
+      </div>
+    </Layout>
   );
 };

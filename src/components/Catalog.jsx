@@ -1,5 +1,6 @@
 import React from "react";
+import { Layout } from "./Layout";
 
 export const Catalog = () => {
-  return <div>Catalog</div>;
+  return <Layout>Catalog</Layout>;
 };

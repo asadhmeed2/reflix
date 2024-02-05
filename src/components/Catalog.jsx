@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { Layout } from "./Layout";
 import { Search } from "./Search";
 import { Budget } from "./Budget";
-import { RentedMovies } from "./RentedMovies";
 import { Movies } from "./Movies";
 
 const RANTING_COST = 3;
@@ -72,9 +71,10 @@ export const Catalog = ({ moviesData }) => {
       </div>
 
       {!!rentedMovies.length && (
-        <RentedMovies
+        <Movies
           movies={rentedMovies}
           onUnRentingMovie={onUnRentingMovie}
+          title={"Rented Movies"}
         />
       )}
 
@@ -82,6 +82,7 @@ export const Catalog = ({ moviesData }) => {
         movies={viewMovies}
         onRentingMovie={onRentingMovie}
         onUnRentingMovie={onUnRentingMovie}
+        title={"Catalog"}
       />
     </Layout>
   );

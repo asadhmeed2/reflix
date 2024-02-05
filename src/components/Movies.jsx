@@ -4,9 +4,9 @@ import { MovieCard } from "./MovieCard";
 export const Movies = ({ movies, onRentingMovie, onUnRentingMovie, title }) => {
   return (
     <>
-      <div className="">{title} :</div>
+      <div className="movies-list-title">{title} :</div>
 
-      <div className="catalog">
+      <div className="movies-list">
         {movies.map((movie) => (
           <MovieCard
             key={movie.id}

@@ -6,7 +6,7 @@ export const Layout = ({ children }) => {
     <div>
       <Header />
 
-      <div className="">{children}</div>
+      <div className="layout-content">{children}</div>
     </div>
   );
 };

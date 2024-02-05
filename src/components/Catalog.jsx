@@ -14,6 +14,7 @@ export const Catalog = ({ moviesData }) => {
 
   const onSearch = (e) => {
     if (!e.target.value) {
+      setViewMovies(movies);
       return;
     }
 
